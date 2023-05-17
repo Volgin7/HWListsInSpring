@@ -18,6 +18,11 @@ public class EmployeeService {
     public EmployeeService() {
         this.employees = new ArrayList<Employee>();
     }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
     public int getMAX_NUMBER_OF_EMPLOYEES() {
         return MAX_NUMBER_OF_EMPLOYEES;
     }

@@ -57,5 +57,8 @@ public class EmployeeController {
             return e.getMessage();
         }
     }
-
+    @GetMapping("/list")
+    public String list() {
+            return employeeService.getEmployees().toString();
+    }
 }
